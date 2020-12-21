@@ -8,4 +8,16 @@ function createGrid(columns, rows) {
     }
 }
 
+function hoverChange() {
+    let squares = document.querySelectorAll('.square');
+
+    squares.forEach((square) => {
+        square.addEventListener('mouseover', (e) =>  {
+            console.log(e);
+            e.target.classList.add('filled');
+        })
+    })
+}
+
 createGrid(16,16);
+hoverChange();

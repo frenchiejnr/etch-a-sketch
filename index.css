@@ -10,3 +10,6 @@ height: 400px
 .square {
     border: 1px solid black;
 }
+
+.filled {
+    background-color: black;}
